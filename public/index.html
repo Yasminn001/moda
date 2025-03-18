@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moda Feminina Luxuosa</title>
+    <style>
+        /* Reset de estilo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo e fonte */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            color: #ff3b6b;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Barra de navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-transform: uppercase;
+            padding: 18px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff3b6b;
+            color: #fff;
+        }
+
+        /* Seção de Produtos */
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .produto {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .produto:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .produto:hover img {
+            transform: scale(1.05);
+        }
+
+        .produto h3 {
+            font-size: 1.6em;
+            color: #333;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .produto p {
+            font-size: 1.2em;
+            color: #777;
+            padding: 0 20px 20px;
+        }
+
+        /* Seção Sobre */
+        .sobre {
+            background-color: #ff3b6b;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .sobre h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .sobre p {
+            font-size: 1.2em;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: #ff3b6b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .produtos {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .produtos {
+                grid-template-columns: 1fr;
+            }
+
+            .produto img {
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Moda Feminina Luxuosa</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="produtos" class="produtos">
+        <div class="produto">
+            <img src="https://via.placeholder.com/400x300" alt="Produto 1">
+            <h3>Vestido de Festa</h3>
+            <p>R$ 799,00</p>
+        </div>
+        <div class="produto">
+            <img src="https://via.placeholder.com/400x300" alt="Produto 2">
+            <h3>Blusa Elegante</h3>
+            <p>R$ 299,00</p>
+        </div>
+        <div class="produto">
+            <img src="https://via.placeholder.com/400x300" alt="Produto 3">
+            <h3>Sapato de Salto</h3>
+            <p>R$ 459,00</p>
+        </div>
+        <div class="produto">
+            <img src="https://via.placeholder.com/400x300" alt="Produto 4">
+            <h3>Bolsa de Couro</h3>
+            <p>R$ 599,00</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre a Loja</h2>
+        <p>Somos uma loja de moda feminina de alto padrão, oferecendo produtos de alta qualidade, estilo e sofisticação para mulheres que buscam sempre o melhor.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Moda Feminina Luxuosa | <a href="#contato">Contato</a></p>
+    </footer>
+
+    <script>
+        // Exemplo de interatividade com JavaScript
+        document.querySelector('footer a').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("Em breve teremos um formulário de contato!");
+        });
+    </script>
+
+</body>
+</html>
